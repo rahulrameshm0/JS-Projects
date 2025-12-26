@@ -31,6 +31,7 @@ cell.forEach(button => {
                 input2.value = score1;
             }
             gameOver = true;
+            setTimeout(resetBoard, 800);
             return
         };
         number = number === '0' ? 'x': '0';
@@ -52,3 +53,9 @@ function checkWinner(){
     }
     return false
 };
+
+function resetBoard() {
+    cell.forEach(box => box.textContent = '');
+    number = '0';
+    gameOver = false;
+}
