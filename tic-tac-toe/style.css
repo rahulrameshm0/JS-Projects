@@ -44,12 +44,6 @@ main input {
     color: #333;
 }
 
-/* Table styling */
-table {
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
 /* Cells */
 td {
     width: 90px;
