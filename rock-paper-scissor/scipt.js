@@ -29,7 +29,7 @@ rock.addEventListener('click', function(){
         computerScore++;
         computer.textContent = computerScore;
     }else{
-        alert('It is draw!')
+        alert('It is draw!');
     }
     checkWinner()
 });
@@ -43,7 +43,7 @@ paper.addEventListener('click', function(){
         computerScore++;
         computer.textContent = computerScore;
     }else{
-        console.log('draw')
+        console.log('draw');
     }
     checkWinner()
 });
@@ -57,7 +57,7 @@ scissors.addEventListener('click', function(){
         computerScore++;
         computer.textContent = computerScore;
     }else{
-        console.log('draw')
+        console.log('draw');
     }
     checkWinner()
 
@@ -65,13 +65,13 @@ scissors.addEventListener('click', function(){
 
 function checkWinner(){
     if (playerScore === 10){
-        winner.textContent = ` Player 1 has won the game`;
+        winner.textContent = `Player has won the game`;
         winner.style.color = 'green';
-        setTimeout(resetGame, 800)
+        setTimeout(resetGame, 2000);
     }else if (computerScore === 10){
         winner.textContent = `Computer has won the game`;
         winner.style.color = 'green';
-        setTimeout(resetGame, 800)
+        setTimeout(resetGame, 2000);
     };
 
 };
