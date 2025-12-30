@@ -28,8 +28,6 @@ rock.addEventListener('click', function(){
     }else if (computer_choice === 'scissors'){
         computerScore++;
         computer.textContent = computerScore;
-    }else{
-        alert('It is draw!');
     }
     checkWinner()
 });
@@ -42,8 +40,6 @@ paper.addEventListener('click', function(){
     }else if (computer_choice === 'scissors'){
         computerScore++;
         computer.textContent = computerScore;
-    }else{
-        console.log('draw');
     }
     checkWinner()
 });
@@ -56,11 +52,8 @@ scissors.addEventListener('click', function(){
     }else if (computer_choice === 'rock'){
         computerScore++;
         computer.textContent = computerScore;
-    }else{
-        console.log('draw');
     }
     checkWinner()
-
 });
 
 function checkWinner(){
@@ -73,7 +66,6 @@ function checkWinner(){
         winner.style.color = 'green';
         setTimeout(resetGame, 2000);
     };
-
 };
 
 function resetGame(){
